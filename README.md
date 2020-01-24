@@ -11,8 +11,10 @@ Based on CTR
 [![GolangCI](https://golangci.com/badges/github.com/gojek/darkroom.svg)](https://golangci.com/r/github.com/syronz/goAES)
 [![Open Source Helpers](https://www.codetriage.com/syronz/goaes/badges/users.svg)](https://www.codetriage.com/syronz/goaes)
 
+[![GoDoc](https://godoc.org/github.com/syronz/go-log?status.svg)](https://godoc.org/github.com/syronz/goAES)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsyronz%2FgoAES.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsyronz%2FgoAES?ref=badge_shield)
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/syronz/goAES/blob/master/LICENSE)
+
 
 ## Usage
 
