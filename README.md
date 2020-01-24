@@ -1,4 +1,13 @@
 # goAES
 Simple package for AES encryption and decryption
 
+[![BuildStatus](https://api.travis-ci.org/syronz/goAES.svg?branch=master)](http://travis-ci.org/syronz/goAES) 
+[![ReportCard](https://goreportcard.com/badge/github.com/syronz/goAES)](https://goreportcard.com/report/github.com/syronz/goAES) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2a4d66750d5047e58742349f2dfc8c8d)](https://www.codacy.com/manual/syronz/goAES?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=syronz/goAES&amp;utm_campaign=Badge_Grade)
+[![codebeat badge](https://codebeat.co/badges/a882cf1a-cc00-4690-b65f-e69fb74cf574)](https://codebeat.co/projects/github-com-syronz-goaes-master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/382db50d589346613f15/maintainability)](https://codeclimate.com/github/syronz/goAES/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/382db50d589346613f15/test_coverage)](https://codeclimate.com/github/syronz/goAES/test_coverage)
+[![GolangCI](https://golangci.com/badges/github.com/gojek/darkroom.svg)](https://golangci.com/r/github.com/syronz/goAES)
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/syronz/goAES/blob/master/LICENCE)
+
 ## Usage
