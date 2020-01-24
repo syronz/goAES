@@ -2,7 +2,6 @@ package goaes
 
 import (
 	"crypto/aes"
-	"crypto/cipher"
 	"crypto/sha256"
 	"fmt"
 )
@@ -40,19 +39,4 @@ func (a Model) IV(iv string) Model {
 func (a Model) Length(length int) Model {
 	a.length = length
 	return a
-}
-
-// Build return generated model and error if exist
-func (a Model) Build() (BuildModel, error) {
-	buildModel := BuildModel{
-		iv:     a.iv,
-		length: a.length,
-	}
-
-	if a.err != nil {
-		return buildModel, a.err
-	}
-	buildModel.block, _ = aes.NewCipher(a.key)
-	buildModel.streamEncrypt = cipher.NewCTR(buildModel.block, a.iv)
-	return buildModel, a.err
 }
