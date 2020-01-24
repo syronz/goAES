@@ -8,5 +8,6 @@ type Model struct {
 	iv            []byte
 	block         cipher.Block
 	streamEncrypt cipher.Stream
+	err           error
 	// stream *cipher.ctr
 }
