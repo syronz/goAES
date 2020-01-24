@@ -1,4 +1,4 @@
-module encryption
+module longstring
 
 go 1.13
 

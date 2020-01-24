@@ -13,8 +13,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	term := "Hello"
-	encrypted := aes.Encrypt(term)
+	encrypted := "257d85d55b"
+	decrypted := aes.Decrypt(encrypted)
 
-	fmt.Printf("Encryption of %q is %q \n", term, encrypted)
+	fmt.Printf("Decryption of %q is %q \n", encrypted, decrypted)
 }

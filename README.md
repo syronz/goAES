@@ -15,6 +15,77 @@ Simple package for AES encryption and decryption
 
 ## Usage
 
+### Encryption
+
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+
+	goaes "github.com/syronz/goAES"
+)
+
+func main() {
+	aes, err := goaes.New().Key("secret key").IV("iv is 16 char!!!").Build()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	term := "Hello"
+	encrypted := aes.Encrypt(term)
+
+	fmt.Printf("Encryption of %q is %q \n", term, encrypted)
+}
+
+```
+
+output:
+```shell
+Encryption of "Hello" is "257d85d55b" 
+```
+
+
+### Decryption
+
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+
+	goaes "github.com/syronz/goAES"
+)
+
+func main() {
+	aes, err := goaes.New().Key("secret key").IV("iv is 16 char!!!").Build()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	encrypted := "257d85d55b"
+	decrypted := aes.Decrypt(encrypted)
+
+	fmt.Printf("Decryption of %q is %q \n", encrypted, decrypted)
+}
+```
+
+output:
+```shell
+Decryption of "257d85d55b" is "Hello" 
+```
+
+### Note
+
+In case of the length of decrypted word is more than 100 we should use **.Length(int)** like here
+```go
+aes, err := goaes.New().Key("secret key").IV("iv is 16 char!!!").Length(10000).Build()
+```
+
+### Online test
+By going to the [gchq.github.io/CyberChef](https://gchq.github.io/CyberChef/#recipe=AES_Encrypt(%7B'option':'Hex','string':'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'%7D,%7B'option':'Latin1','string':'1234567890123456'%7D,'CTR','Raw','Hex')AES_Decrypt(%7B'option':'Hex','string':'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'%7D,%7B'option':'Latin1','string':'1234567890123456'%7D,'CTR','Hex','Raw',%7B'option':'Latin1','string':''%7D/breakpoint)&input=QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo) you can test it manually 
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsyronz%2FgoAES.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsyronz%2FgoAES?ref=badge_large)
