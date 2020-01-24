@@ -9,7 +9,9 @@ import (
 
 // New create the instance of Model and setup block and iv
 func New() Model {
-	a := Model{}
+	a := Model{
+		length: 100,
+	}
 
 	return a
 }
@@ -34,10 +36,17 @@ func (a Model) IV(iv string) Model {
 	return a
 }
 
+// Length is used in case the result is more than 100 character
+func (a Model) Length(length int) Model {
+	a.length = length
+	return a
+}
+
 // Build return generated model and error if exist
 func (a Model) Build() (BuildModel, error) {
 	buildModel := BuildModel{
-		iv: a.iv,
+		iv:     a.iv,
+		length: a.length,
 	}
 
 	if a.err != nil {
