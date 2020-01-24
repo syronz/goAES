@@ -9,6 +9,6 @@ Simple package for AES encryption and decryption
 [![GolangCI](https://golangci.com/badges/github.com/gojek/darkroom.svg)](https://golangci.com/r/github.com/syronz/goAES)
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/syronz/goAES/blob/master/LICENSE)
 [![Open Source Helpers](https://www.codetriage.com/syronz/goaes/badges/users.svg)](https://www.codetriage.com/syronz/goaes)
-[![Go Coverage](https://www.codetriage.com/syronz/goaes/badges/users.svg)](https://gocover.io/github.com/syronz/goAES)
+[![Go Coverage](https://github.com/syronz/goAES/blob/master/coverage_badge.png)](https://gocover.io/github.com/syronz/goAES)
 
 ## Usage
