@@ -7,9 +7,9 @@ Simple package for AES encryption and decryption
 [![codebeat badge](https://codebeat.co/badges/a882cf1a-cc00-4690-b65f-e69fb74cf574)](https://codebeat.co/projects/github-com-syronz-goaes-master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/382db50d589346613f15/maintainability)](https://codeclimate.com/github/syronz/goAES/maintainability)
 [![GolangCI](https://golangci.com/badges/github.com/gojek/darkroom.svg)](https://golangci.com/r/github.com/syronz/goAES)
-[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/syronz/goAES/blob/master/LICENSE)
 [![Open Source Helpers](https://www.codetriage.com/syronz/goaes/badges/users.svg)](https://www.codetriage.com/syronz/goaes)
 [![Go Coverage](https://github.com/syronz/goAES/blob/master/coverage_badge.png)](https://gocover.io/github.com/syronz/goAES)
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/syronz/goAES/blob/master/LICENSE)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsyronz%2FgoAES.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsyronz%2FgoAES?ref=badge_shield)
 
 ## Usage

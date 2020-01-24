@@ -15,11 +15,12 @@ func TestNew(t *testing.T) {
 		{"", "1234567890123456", ""},
 		{"", "k3dl29d+2k3jf832", ""},
 		{"2345678dfghj3249283uyr2840298341;lk098134jj098s7fdq1kj09", "k3dl29d+2k3jf832", ""},
-		{"2345678dfghj3249283uyr2840298341;lk098134jj098s7fdq1kj09", "k3dl29d+2k3jf832", ""},
+		{"", "                ", ""},
+		{"", "", "length of iv should be 16"},
 	}
 
 	for _, v := range samples {
-		_, err := New(v.secret, v.iv).Build()
+		_, err := New().Key(v.secret).IV(v.iv).Build()
 		var errStr string
 		if err != nil {
 			errStr = err.Error()
