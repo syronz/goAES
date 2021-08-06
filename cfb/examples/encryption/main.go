@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"log"
 
-	goaes "github.com/syronz/goAES"
+	"github.com/syronz/goAES/cfb"
 )
 
 func main() {
-	aes, err := goaes.New().Key("secret key").IV("iv is 16 char!!!").Build()
+	aes, err := cfb.New().Key("secret key").IV("iv is 16 char!!!").Build()
 	if err != nil {
 		log.Fatal(err)
 	}

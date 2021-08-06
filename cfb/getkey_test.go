@@ -1,4 +1,4 @@
-package goaes
+package cfb
 
 import "testing"
 
