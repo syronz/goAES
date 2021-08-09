@@ -23,14 +23,17 @@ func Encryptor(input []byte) (output []byte, err error) {
 		log.Panic(err)
 	}
 
-	gcm, err := cipher.NewGCM(block)
+	// var gcm int
+	var gcm cipher.AEAD
+	gcm, err = cipher.NewGCM(block)
 	if err != nil {
 		log.Panic(err)
 	}
 
 	// Never use more than 2^32 random nonces with a given key
 	// because of the risk of repeat.
-	nonce := make([]byte, gcm.NonceSize())
+	var nonce []byte
+	nonce = make([]byte, gcm.NonceSize())
 	if _, err := io.ReadFull(rand.Reader, nonce); err != nil {
 		log.Fatal(err)
 	}
